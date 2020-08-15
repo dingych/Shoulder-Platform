@@ -3,9 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>cn.itlym</groupId>
-        <artifactId>shoulder-parent</artifactId>
-        <version>0.2-SNAPSHOT</version><!-- shoulder-version -->
+        <groupId>cn.itlym.platform</groupId>
+        <artifactId>shoulder-platform-common</artifactId>
+        <version>0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -73,6 +73,9 @@
             <artifactId>jackson-datatype-jsr310</artifactId>
             <scope>compile</scope>
         </dependency>
+
+        <!-- 分布式事务 -->
+
 
         <!--数据库文档-->
         <!--https://gitee.com/enilu/database-doc-generator-->

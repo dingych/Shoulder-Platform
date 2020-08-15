@@ -9,19 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>shoulder-platform-starter-rest</artifactId>
-    <!--rest 服务依赖管理-->
+    <artifactId>shoulder-platform-starter-job</artifactId>
 
-    <dependencies>
-        <!-- 包含了 spring-boot-starter-web，在其之上额外提供了更棒的能力 -->
-        <dependency>
-            <groupId>cn.itlym</groupId>
-            <artifactId>shoulder-starter-web</artifactId>
-        </dependency>
-
-
-
-
-    </dependencies>
 
 </project>

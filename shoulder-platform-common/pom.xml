@@ -14,11 +14,18 @@
 
     <modules>
         <module>shoulder-platform-starter-db</module>
-        <module>shoulder-platform-starter-rest</module>
+        <module>shoulder-platform-starter-mq</module>
+        <module>shoulder-platform-starter-config-client</module>
+        <module>shoulder-platform-starter-discovery-client</module>
+        <module>shoulder-platform-starter-rpc-client</module>
+        <module>shoulder-platform-starter-rpc-server</module>
+        <module>shoulder-platform-starter-micro</module>
+        <module>shoulder-platform-starter-job</module>
     </modules>
 
-    <!--<properties>
+    <properties>
         <shoulder.version>0.2-SNAPSHOT</shoulder.version>
+        <shoulder-platform.version>0.1-SNAPSHOT</shoulder-platform.version>
     </properties>
 
     <dependencyManagement>
@@ -31,6 +38,6 @@
                 <scope>import</scope>
             </dependency>
         </dependencies>
-    </dependencyManagement>-->
+    </dependencyManagement>
 
 </project>

@@ -4,9 +4,7 @@
 [![](https://img.shields.io/badge/Author-lym-blue.svg)](https://github.com/ChinaLym)
 [![](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://github.com/ChinaLym/Shoulder-Platform)
 [![GitHub stars](https://img.shields.io/github/stars/ChinaLym/Shoulder-Framework.svg?style=social&label=Stars)](https://github.com/ChinaLym/Shoulder-Platform/stargazers)
-[![star](https://github.com/ChinaLym/Shoulder-Platform/badge/star.svg?theme=white)](https://github.com/ChinaLym/Shoulder-Platform/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/ChinaLym/Shoulder-Framework.svg?style=social&label=Fork)](https://github.com/ChinaLym/Shoulder-Framework/network/members)
-[![fork](https://github.com/ChinaLym/Shoulder-Platform/badge/fork.svg?theme=white)](https://github.com/ChinaLym/Shoulder-Platform/members)
 
 
 ## 简介：
@@ -18,6 +16,9 @@
     - 用户管理
 	- 资源权限管理
     - 通知推送中心（短信、邮件）
+    - ~~错误码中心~~
+    - ~~常见问题排查手册~~
+    - 在线 api 文档中心
     
 - 核心框架
     - `SpringBoot` 
@@ -32,29 +33,29 @@
     - 负载均衡
         - Ribbon
     - 限流 & 断路器
-        - sentinel
+        - Sentinel
     - 服务认证
         - Spring Security（JWT）
     - 配置中心
         - nacos
     - 消息通知
         - rabbitMQ
-    - 配置中心
-        - nacos
-    - 链路追踪
-        - zipkin
     - 文件存储
-        - ceph
-    - 服务监控
+        - ceph、OSS..
+    - 分布式任务调度
+        - Power Job
+    - 分布式事务
+        - Seata
+    - 链路追踪
+        - Zipkin
+    - 服务概览
         - spring-boot-admin
-    - 日志收集
-        - EFK（Elastic Search + Fluentd + Kibana）
     - 监控、可视化、报警
         - spring-boot-actuator、Prometheus、Grafana、Alert Manager
+    - 日志采集、查看
+        - EFK（Elastic Search + Fluentd + Kibana）
     - 持续集成、持续部署（不限制）
         - Jenkins、Drone、Docker
-    - 分布式任务中间件
-        - Power Job
     - 灰度发布
         - 依赖 Ribbon
     
