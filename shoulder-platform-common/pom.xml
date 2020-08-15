@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>shoulder-platform</artifactId>
+        <groupId>cn.itlym.platform</groupId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>shoulder-platform-common</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>shoulder-platform-starter-db</module>
+        <module>shoulder-platform-starter-rest</module>
+    </modules>
+
+    <!--<properties>
+        <shoulder.version>0.2-SNAPSHOT</shoulder.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cn.itlym</groupId>
+                <artifactId>shoulder-dependencies</artifactId>
+                <version>${shoulder.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>-->
+
+</project>
