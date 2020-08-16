@@ -21,6 +21,9 @@
         <module>shoulder-platform-starter-rpc-server</module>
         <module>shoulder-platform-starter-micro</module>
         <module>shoulder-platform-starter-job</module>
+        <module>shoulder-platform-parent</module>
+        <module>shoulder-platform-starter-monitor</module>
+        <module>shoulder-platform-starter-trace</module>
     </modules>
 
     <properties>
