@@ -5,8 +5,11 @@ import cn.itlym.shoulder.platform.gateway.client.dto.param.DeleteServiceTokenPar
 import lombok.extern.slf4j.Slf4j;
 import org.shoulder.core.dto.response.BaseResponse;
 import org.shoulder.core.exception.BaseRuntimeException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.gateway.route.RouteDefinitionLocator;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.core.io.buffer.DataBufferUtils;
+import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 
@@ -20,8 +23,12 @@ import static org.springframework.http.MediaType.APPLICATION_JSON;
  * @author lym
  */
 @Slf4j
+@Service
 public class ServiceTokenClientImpl implements ServiceTokenClient {
 
+
+    @Autowired
+    private RouteDefinitionLocator locator;
 
     /**
      * 使用 accessToken 换取 serviceToken 接口路径

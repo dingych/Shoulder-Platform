@@ -36,17 +36,11 @@
         </dependency>
 
         <!-- 数据库 连接池 默认使用高性能的 beecp （性能是 spring-boot 默认 hikairCP 两倍，功能较少）-->
-        <!--<dependency>
+        <dependency>
             <groupId>com.github.chris2018998</groupId>
             <artifactId>BeeCP</artifactId>
-            <version>2.5.3</version>
-        </dependency>-->
+        </dependency>
 
-        <!--<dependency>
-            <groupId>com.github.chris2018998</groupId>
-            <artifactId>spring-boot-starter-beecp</artifactId>
-            <version>1.3.5.RELEASE</version>
-        </dependency>-->
         <!-- 弥补 beecp 的功能缺失（打印SQL日志、监控） -->
         <dependency>
             <groupId>p6spy</groupId>

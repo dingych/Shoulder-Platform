@@ -14,7 +14,9 @@ import org.springframework.web.util.pattern.PathPatternParser;
  *
  * @author lym
  */
-@Configuration
+@Configuration(
+        proxyBeanMethods = false
+)
 public class CorsConfig {
 
     @Bean

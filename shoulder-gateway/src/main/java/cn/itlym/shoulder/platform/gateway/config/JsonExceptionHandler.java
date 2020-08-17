@@ -4,9 +4,11 @@ import cn.itlym.shoulder.platform.gateway.ex.ShoulderGatewayException;
 import lombok.extern.shoulder.SLog;
 import org.shoulder.core.dto.response.BaseResponse;
 import org.shoulder.core.exception.ErrorCode;
-import org.springframework.boot.autoconfigure.web.ErrorProperties;
+import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.web.ResourceProperties;
+import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.boot.autoconfigure.web.reactive.error.DefaultErrorWebExceptionHandler;
+import org.springframework.boot.autoconfigure.web.reactive.error.ErrorWebFluxAutoConfiguration;
 import org.springframework.boot.web.reactive.error.ErrorAttributes;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
@@ -14,14 +16,17 @@ import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.codec.ServerCodecConfigurer;
 import org.springframework.lang.NonNull;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.server.*;
+import org.springframework.web.reactive.result.view.ViewResolver;
 import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * 异常 json 化处理，并返回 shoulder 定义的统一返回值类型
@@ -29,7 +34,9 @@ import java.util.Map;
  * @author lym
  */
 @SLog
-@Configuration
+@Configuration(
+        proxyBeanMethods = false
+)
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
 
@@ -42,9 +49,18 @@ public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
      */
     private static final int DEFAULT_SERVER_ERROR_HTTP_STATUS = HttpStatus.INTERNAL_SERVER_ERROR.value();
 
+    /**
+     * @see ErrorWebFluxAutoConfiguration#errorWebExceptionHandler
+     */
     public JsonExceptionHandler(ErrorAttributes errorAttributes, ResourceProperties resourceProperties,
-                                ErrorProperties errorProperties, ApplicationContext applicationContext) {
-        super(errorAttributes, resourceProperties, errorProperties, applicationContext);
+                                ServerProperties serverProperties, ApplicationContext applicationContext,
+                                ObjectProvider<ViewResolver> viewResolvers,
+                                ServerCodecConfigurer serverCodecConfigurer) {
+
+        super(errorAttributes, resourceProperties, serverProperties.getError(), applicationContext);
+        super.setViewResolvers(viewResolvers.orderedStream().collect(Collectors.toList()));
+        super.setMessageWriters(serverCodecConfigurer.getWriters());
+        super.setMessageReaders(serverCodecConfigurer.getReaders());
     }
 
     /**
