@@ -1,15 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>shoulder-platform</artifactId>
-        <groupId>cn.itlym.platform</groupId>
-        <version>0.1-SNAPSHOT</version>
-    </parent>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>shoulder-gateway</artifactId>
+    <parent>
+        <groupId>cn.itlym.platform</groupId>
+        <artifactId>shoulder-platform-parent</artifactId>
+        <version>1.0-SNAPSHOT</version><!-- shoulder-platform-version -->
+        <relativePath>../shoulder-platform-common/shoulder-platform-parent/pom.xml</relativePath>
+    </parent>
 
+    <artifactId>shoulder-gateway</artifactId>
+    <version>1.0-SNAPSHOT</version><!-- shoulder-platform-version -->
+    <name>${project.artifactId}</name>
+
+    <description>Shoulder 网关，在 spring cloud gateway 之上，增加了认证，追踪，跨域的支持</description>
+
+    <properties>
+        <shoulder.version>0.2-SNAPSHOT</shoulder.version><!-- shoulder-version -->
+        <spring-boot.version>2.2.8.RELEASE</spring-boot.version>
+        <spring-cloud.version>Hoxton.SR6</spring-cloud.version>
+        <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+    </properties>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>cn.itlym</groupId>
+            <artifactId>shoulder-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.alibaba</groupId>
+                    <artifactId>fastjson</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.alibaba</groupId>
+                    <artifactId>fastjson</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <!-- maven 默认使用 artifactId+version拼接 -->
+        <finalName>${project.artifactId}</finalName>
+
+        <!-- 动态打包环境配置源文件 -->
+        <filters>
+            <filter>../dynamicConfig/config-${profile.active}.properties</filter>
+        </filters>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
+    </build>
 
 </project>
+

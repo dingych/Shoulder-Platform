@@ -11,7 +11,8 @@
 
     <groupId>cn.itlym.platform</groupId>
     <artifactId>shoulder-platform-parent</artifactId>
-    <version>${shoulder-platform.version}</version>
+    <version>1.0-SNAPSHOT</version><!-- shoulder-platform-version -->
+    <packaging>pom</packaging>
 
     <url>https://github.com/ChinaLym/Shoulder-Platform</url>
     <name>${project.artifactId}</name>
@@ -35,10 +36,13 @@
 
     <properties>
         <shoulder.version>0.2-SNAPSHOT</shoulder.version><!-- shoulder-version -->
-        <shoulder-platform.version>1.0-SNAPSHOT</shoulder-platform.version>
+        <shoulder-platform.version>1.0-SNAPSHOT</shoulder-platform.version><!-- shoulder-platform-version -->
 
-        <docker.image.prefix>shoulder</docker.image.prefix>
+        <fastjson.version>1.2.9</fastjson.version>
+
+        <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
         <dockerfile-maven-plugin.version>1.4.19</dockerfile-maven-plugin.version>
+        <docker.image.prefix>shoulder</docker.image.prefix>
         <spring-boot-maven-plugin.version>2.2.8.RELEASE</spring-boot-maven-plugin.version><!-- spring-boot.version -->
     </properties>
 
@@ -105,6 +109,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -142,9 +147,15 @@
     </profiles>
 
     <build>
-        <finalName>${project.artifactId}</finalName>
+        <!-- maven 默认使用 artifactId+version拼接 -->
+        <!--<finalName>${project.artifactId}</finalName>-->
 
-        <resources>
+        <!-- 动态打包环境配置源文件 -->
+        <!--<filters>
+            <filter>../../dynamicConfig/config-${profile.active}.properties</filter>
+        </filters>-->
+
+        <!--<resources>
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
@@ -152,7 +163,7 @@
                 </includes>
                 <filtering>true</filtering>
             </resource>
-        </resources>
+        </resources>-->
 
         <pluginManagement>
             <plugins>
