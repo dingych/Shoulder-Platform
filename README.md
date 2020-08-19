@@ -19,11 +19,11 @@
 
 ## 在线预览
 
-- [开发规范地址](spec.itlym.cn)
-- [Grafana + Prometheus 监控系统](grafana.itlym.cn)（访客账号密码：`shoulder` / `shoulder123`，仅包含仪表盘查看权限）
-- [EFK 日志系统](kibana.itlym.cn)（访客账号密码：`shoulder` / `shoulder123`，仅包含日志检索查看权限）
+- [开发规范地址](http://spec.itlym.cn)
+- [Grafana + Prometheus 监控系统](http://grafana.itlym.cn)（访客账号密码：`shoulder` / `shoulder123`，仅包含仪表盘查看权限）
+- [EFK 日志系统](http://kibana.itlym.cn)（访客账号密码：`shoulder` / `shoulder123`，仅包含日志检索查看权限）
 - 平台地址( 开发中 )
-- ~~[zipkin 链路追踪系统](zipkin.itlym.cn)（暂时下线）~~
+- ~~[zipkin 链路追踪系统](http://zipkin.itlym.cn)（暂时下线）~~
 
 # 能力介绍
 
