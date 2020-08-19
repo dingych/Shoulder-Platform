@@ -15,11 +15,19 @@
 
 ![架构图.png](img/architecture.png)
 
-https://app.diagrams.net/
+在线工具：[https://app.diagrams.net/](https://app.diagrams.net/) [https://processon.com/](https://processon.com/)
 
-https://processon.com/
+## 在线预览
 
-- 能力
+- [开发规范地址](spec.itlym.cn)
+- [Grafana + Prometheus 监控系统](grafana.itlym.cn)（访客账号密码：`shoulder` / `shoulder123`，仅包含仪表盘查看权限）
+- [EFK 日志系统](kibana.itlym.cn)（访客账号密码：`shoulder` / `shoulder123`，仅包含日志检索查看权限）
+- 平台地址( 开发中 )
+- ~~[zipkin 链路追踪系统](zipkin.itlym.cn)（暂时下线）~~
+
+# 能力介绍
+
+- 能力概览
 	- 单点登录
     - 用户管理
 	- 资源权限管理

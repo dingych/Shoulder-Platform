@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.shoulder.core.dto.response.BaseResponse;
 import org.shoulder.core.exception.BaseRuntimeException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.gateway.route.RouteDefinitionLocator;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.core.io.buffer.DataBufferUtils;
@@ -42,7 +43,12 @@ public class ServiceTokenClientImpl implements ServiceTokenClient {
 
     private WebClient webClient;
 
-    public ServiceTokenClientImpl(String accessManagerServiceUrl) {
+    /**
+     * todo 注入地址
+     *
+     * @param accessManagerServiceUrl
+     */
+    public ServiceTokenClientImpl(@Value("xxx") String accessManagerServiceUrl) {
         webClient = WebClient.create(accessManagerServiceUrl);
     }
 
