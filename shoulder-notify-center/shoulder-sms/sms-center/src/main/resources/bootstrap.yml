@@ -5,7 +5,15 @@ shoulder:
     port: ${NACOS_PORT:@nacos.port@}
     namespace: ${NACOS_ID:@nacos.namespace@}
 
+# spring-boot-actuate 展示信息
+info:
+  name: "@project.name@"
+  description: "@project.description@"
+  version: "@project.version@"
+  spring-boot-version: "@spring.boot.version@"
+  spring-cloud-version: "@spring.cloud.version@"
 
+# ==================================  配置正文  ================================
 spring:
   #main:
   #allow-bean-definition-overriding: true
@@ -35,18 +43,4 @@ spring:
         namespace: ${shoulder.nacos.namespace}
         metadata:
           management.context-path: ${server.servlet.context-path:}${spring.mvc.servlet.path:}${management.endpoints.web.base-path:}
-
-logging:
-  file:
-    path: /logs
-    name: ${logging.file.path}/${spring.application.name}/${spring.application.name}.log
-
-# spring-boot-actuate 展示信息
-info:
-  name: "@project.name@"
-  description: "@project.description@"
-  version: "@project.version@"
-  spring-boot-version: "@spring.boot.version@"
-  spring-cloud-version: "@spring.cloud.version@"
-
 

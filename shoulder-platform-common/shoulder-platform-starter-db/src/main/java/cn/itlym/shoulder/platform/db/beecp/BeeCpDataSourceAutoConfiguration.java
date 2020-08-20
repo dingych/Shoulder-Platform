@@ -20,6 +20,7 @@ import javax.sql.DataSource;
 @ConditionalOnClass(cn.beecp.BeeDataSource.class)
 @ConditionalOnProperty(name = "spring.datasource.type", havingValue = "cn.beecp.BeeDataSource", matchIfMissing = true)
 public class BeeCpDataSourceAutoConfiguration {
+
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource beeDataSource() throws BeansException {

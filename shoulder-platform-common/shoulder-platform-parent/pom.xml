@@ -38,6 +38,8 @@
         <shoulder.version>0.2-SNAPSHOT</shoulder.version><!-- shoulder-version -->
         <shoulder-platform.version>1.0-SNAPSHOT</shoulder-platform.version><!-- shoulder-platform-version -->
 
+        <sms-aliyun.version>1.0-SNAPSHOT</sms-aliyun.version><!-- shoulder-sms-aliyun.version -->
+
         <fastjson.version>1.2.9</fastjson.version>
 
         <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
@@ -99,6 +101,12 @@
                 <groupId>cn.itlym.platform</groupId>
                 <artifactId>shoulder-platform-starter-micro</artifactId>
                 <version>${shoulder-platform.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.itlym.platform</groupId>
+                <artifactId>shoulder-sms-aliyun-spring-boot-starter</artifactId>
+                <version>${sms-aliyun.version}</version>
             </dependency>
 
         </dependencies>

@@ -1,0 +1,12 @@
+${AnsiColor.BRIGHT_YELLOW}
+ ____  _                 _     _             ____  __  __ ____         ____           _
+/ ___|| |__   ___  _   _| | __| | ___ _ __  / ___||  \/  / ___|       / ___|___ _ __ | |_ ___ _ __
+${AnsiColor.YELLOW}\___ \| '_ \ / _ \| | | | |/ _` |/ _ \ '__| \___ \| |\/| \___ \ _____| |   / _ \ '_ \| __/ _ \ '__|
+ ___) | | | | (_) | |_| | | (_| |  __/ |     ___) | |  | |___) |_____| |__|  __/ | | | ||  __/ |
+${AnsiColor.BRIGHT_GREEN}|____/|_| |_|\___/ \__,_|_|\__,_|\___|_|    |____/|_|  |_|____/       \____\___|_| |_|\__\___|_|
+${AnsiColor.BRIGHT_BLUE}
+
+Application Version: @project.name@ - @project.version@ —— @project.description@
+Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
+Shoulder-Framework Version: ${shoulder.version}
+${AnsiColor.DEFAULT}

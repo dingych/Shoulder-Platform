@@ -12,6 +12,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>shoulder-notify-center</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>shoulder-sms</module>
+    </modules>
 
 
 </project>

@@ -13,7 +13,12 @@
     <artifactId>shoulder-platform-starter-micro</artifactId>
 
     <!--提供了微服务常用的技术-->
-
+    <!-- 使用方式：
+        <dependency>
+            <groupId>cn.itlym.platform</groupId>
+            <artifactId>shoulder-platform-starter-micro</artifactId>
+        </dependency>
+        -->
     <dependencies>
         <!-- 数据库 -->
         <dependency>
