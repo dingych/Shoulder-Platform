@@ -68,7 +68,7 @@
 
         <!-- 动态打包环境配置源文件 -->
         <filters>
-            <filter>../../../../dynamicConfig/config-${profile.active}.properties</filter>
+            <filter>../../../dynamicConfig/config-${profile.active}.properties</filter>
         </filters>
 
         <resources>

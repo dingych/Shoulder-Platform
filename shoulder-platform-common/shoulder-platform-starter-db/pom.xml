@@ -41,13 +41,19 @@
             <groupId>com.github.chris2018998</groupId>
             <artifactId>BeeCP</artifactId>
         </dependency>
+        <!-- beecp 的 starter 官方提供的有 bug 因为其 provide 属性会导致编译失败 -->
+        <!--<dependency>
+            <groupId>com.github.chris2018998</groupId>
+            <artifactId>spring-boot-starter-beecp</artifactId>
+            <version>1.3.5.RELEASE</version>
+        </dependency>-->
 
         <!-- 弥补 beecp 的功能缺失（打印SQL日志、监控） -->
         <dependency>
             <groupId>p6spy</groupId>
             <artifactId>p6spy</artifactId>
         </dependency>
-                <!-- 其他推荐连接池-->
+        <!-- 其他推荐连接池-->
         <!--
         <dependency>
             <groupId>com.zaxxer</groupId>

@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 
 /**
- * beecp 数据源自动配置
+ * beecp 数据源自动配置（beecp 官方提供的 starter 有 bug 因为其 provide 属性会导致编译失败）
  *
  * @author lym
  */

@@ -12,15 +12,16 @@ info:
   version: "@project.version@"
   spring-boot-version: "@spring.boot.version@"
   spring-cloud-version: "@spring.cloud.version@"
+  profile: "@profile.active@"
 
 # ==================================  配置正文  ================================
 spring:
   #main:
   #allow-bean-definition-overriding: true
   application:
-    name: @project.artifactId@
+    name: ${info.name}
   profiles:
-    active: @profile.active@
+    active: ${info.profile}
   cloud:
     nacos:
       config:

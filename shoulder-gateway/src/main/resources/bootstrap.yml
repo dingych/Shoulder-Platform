@@ -5,14 +5,22 @@ shoulder:
     port: ${NACOS_PORT:@nacos.port@}
     namespace: ${NACOS_ID:@nacos.namespace@}
 
+# spring-boot-actuate 展示信息
+info:
+  name: "@project.name@"
+  description: "@project.description@"
+  version: "@project.version@"
+  spring-boot-version: "@spring.boot.version@"
+  spring-cloud-version: "@spring.cloud.version@"
+  profile: "@profile.active@"
 
 spring:
   #main:
   #allow-bean-definition-overriding: true
   application:
-    name: @project.artifactId@
+    name: ${info.name}
   profiles:
-    active: @profile.active@
+    active: ${info.profile}
   cloud:
     nacos:
       config:
@@ -40,13 +48,3 @@ logging:
   file:
     path: /logs
     name: ${logging.file.path}/${spring.application.name}/${spring.application.name}.log
-
-# spring-boot-actuate 展示信息
-info:
-  name: "@project.name@"
-  description: "@project.description@"
-  version: "@project.version@"
-  spring-boot-version: "@spring.boot.version@"
-  spring-cloud-version: "@spring.cloud.version@"
-
-
