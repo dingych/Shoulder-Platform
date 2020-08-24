@@ -1,16 +1,15 @@
 # shoulder-platform
 
-管理了shoulder平台微服务开发中常用的jar
+管理了 shoulder-platform 微服务开发中常用的jar（包含了shoulder-platform-common中几个常用的）
 
 包含以下：
-- 服务发现 & 注册
-- 对接统一配置中心
-- 链路追踪
-- 服务指标监控
-- 服务调用
-- 服务提供
-    - 包含如 `spring-boot-starter-web`、`shoulder-starter-web` 参数校验、参数转换、统一异常处理等
- 
+- 统一服务发现 & 注册
+- 统一配置中心
+- 统一链路追踪
+- 统一性能监控、指标监控
+- 统一服务调用
+- 统一服务提供
+- 统一消息通知
 
 使用：
 

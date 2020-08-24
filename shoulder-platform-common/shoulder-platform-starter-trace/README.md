@@ -1,3 +1,17 @@
 # shoulder-platform-starter-trace
 
-链路追踪客户端依赖
+统一链路追踪技术方案。
+
+选型指南，符合业界规范：OpenTracing；低入侵。
+
+
+三大主流：
+- Zipkin（Twitter 提供，大规模应用）
+- Skywalking（国产优秀项目，高性能，shoulder 最初对接方案）
+- Pinpoint（记录数据详细、UI强大）
+
+
+这里推荐 Skywalking，但其服务端会比其他两个消耗更多的资源（CPU、内存）。
+
+由于这三者均可以做到代码无入侵，选型平滑切换。为了减少资源占用 Shoulder 默认选用了 `Zipkin`
+
