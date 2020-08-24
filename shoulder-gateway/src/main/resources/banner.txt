@@ -1,0 +1,11 @@
+${AnsiColor.CYAN} ____  _                 _     _           ${AnsiColor.BRIGHT_YELLOW}   ____       _
+${AnsiColor.CYAN}/ ___|| |__   ___  _   _| | __| | ___ _ __ ${AnsiColor.BRIGHT_YELLOW}  / ___| __ _| |_ _____      ____ _ _   _
+${AnsiColor.CYAN}\___ \| '_ \ / _ \| | | | |/ _` |/ _ \ '__|${AnsiColor.BRIGHT_YELLOW} | |  _ / _` | __/ _ \ \ /\ / / _` | | | |
+${AnsiColor.CYAN} ___) | | | | (_) | |_| | | (_| |  __/ |   ${AnsiColor.BRIGHT_YELLOW} | |_| | (_| | ||  __/\ V  V / (_| | |_| |
+${AnsiColor.CYAN}|____/|_| |_|\___/ \__,_|_|\__,_|\___|_|   ${AnsiColor.BRIGHT_YELLOW}  \____|\__,_|\__\___| \_/\_/ \__,_|\__, |
+${AnsiColor.CYAN}                                           ${AnsiColor.BRIGHT_YELLOW}                                    |___/
+
+${AnsiColor.BRIGHT_YELLOW}@project.artifactId@ ${AnsiColor.BRIGHT_GREEN}@project.version@${AnsiColor.CYAN} @project.description@
+${AnsiColor.BLUE}Spring Boot ${AnsiColor.CYAN}${spring-boot.version}${spring-boot.formatted-version}
+${AnsiColor.BLUE}Shoulder-Framework ${AnsiColor.CYAN}@shoulder.version@
+${AnsiColor.DEFAULT}

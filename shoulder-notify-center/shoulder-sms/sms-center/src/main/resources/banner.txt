@@ -1,12 +1,11 @@
-${AnsiColor.BRIGHT_YELLOW}
- ____  _                 _     _             ____  __  __ ____         ____           _
-/ ___|| |__   ___  _   _| | __| | ___ _ __  / ___||  \/  / ___|       / ___|___ _ __ | |_ ___ _ __
-${AnsiColor.YELLOW}\___ \| '_ \ / _ \| | | | |/ _` |/ _ \ '__| \___ \| |\/| \___ \ _____| |   / _ \ '_ \| __/ _ \ '__|
- ___) | | | | (_) | |_| | | (_| |  __/ |     ___) | |  | |___) |_____| |__|  __/ | | | ||  __/ |
-${AnsiColor.BRIGHT_GREEN}|____/|_| |_|\___/ \__,_|_|\__,_|\___|_|    |____/|_|  |_|____/       \____\___|_| |_|\__\___|_|
-${AnsiColor.BRIGHT_BLUE}
+${AnsiColor.CYAN} ____  _                 _     _           ${AnsiColor.BRIGHT_YELLOW}  ____  __  __ ____         ____           _
+${AnsiColor.CYAN}/ ___|| |__   ___  _   _| | __| | ___ _ __ ${AnsiColor.BRIGHT_YELLOW} / ___||  \/  / ___|       / ___|___ _ __ | |_ ___ _ __
+${AnsiColor.CYAN}\___ \| '_ \ / _ \| | | | |/ _` |/ _ \ '__|${AnsiColor.BRIGHT_YELLOW} \___ \| |\/| \___ \ _____| |   / _ \ '_ \| __/ _ \ '__|
+${AnsiColor.CYAN} ___) | | | | (_) | |_| | | (_| |  __/ |   ${AnsiColor.BRIGHT_YELLOW}  ___) | |  | |___) |_____| |__|  __/ | | | ||  __/ |
+${AnsiColor.CYAN}|____/|_| |_|\___/ \__,_|_|\__,_|\___|_|   ${AnsiColor.BRIGHT_YELLOW} |____/|_|  |_|____/       \____\___|_| |_|\__\___|_|
 
-Application Version: @project.name@ - @project.version@ —— @project.description@
-Spring Boot Version: ${spring-boot.version}${spring-boot.formatted-version}
-Shoulder-Framework Version: ${shoulder.version}
+
+${AnsiColor.BRIGHT_YELLOW}@project.artifactId@ ${AnsiColor.BRIGHT_GREEN}@project.version@${AnsiColor.CYAN} @project.description@
+${AnsiColor.BLUE}Spring Boot ${AnsiColor.CYAN}${spring-boot.version}${spring-boot.formatted-version}
+${AnsiColor.BLUE}Shoulder-Framework ${AnsiColor.CYAN}@shoulder.version@
 ${AnsiColor.DEFAULT}

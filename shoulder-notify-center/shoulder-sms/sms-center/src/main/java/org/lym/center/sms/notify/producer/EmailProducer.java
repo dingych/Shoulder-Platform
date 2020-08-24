@@ -6,7 +6,6 @@ import org.springframework.jms.core.JmsTemplate;
 
 /**
  * @author lym
- * @since 1.0
  */
 //@Component
 public class EmailProducer {

@@ -18,6 +18,7 @@ public class EmailSenderImpl implements EmailSender {
 
     @Value("${spring.mail.username}")
     public String USER_NAME;//发送者
+
     @Autowired
     private JavaMailSender mailSender;//执行者
 

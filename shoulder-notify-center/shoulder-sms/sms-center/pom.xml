@@ -10,6 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>sms-center</artifactId>
+    <name>${artifactId}</name>
+    <description>Shoulder平台-短信推送服务</description>
 
     <properties>
         <javax.mail.version>1.6.2</javax.mail.version>

@@ -4,7 +4,6 @@ import java.util.Date;
 
 /**
  * @author lym
- * @since 1.0
  */
 public class EmailContentTemplate {
 

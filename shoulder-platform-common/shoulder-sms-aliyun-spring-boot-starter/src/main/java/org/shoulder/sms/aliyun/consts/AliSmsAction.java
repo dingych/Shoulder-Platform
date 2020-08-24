@@ -4,7 +4,6 @@ package org.shoulder.sms.aliyun.consts;
  * 阿里云短信接口 action https://help.aliyun.com/document_detail/102715.html
  *
  * @author lym
- * @since 1.0
  */
 public enum AliSmsAction {
 
