@@ -141,10 +141,10 @@
                 <version>${fastjson.version}</version>
             </dependency>
 
-                <dependency>
+                <!--<dependency>
                     <groupId>com.google.guava</groupId>
                     <artifactId>guava</artifactId>
-                </dependency>
+                </dependency>-->
 
             <dependency>
                 <groupId>com.alibaba.nacos</groupId>

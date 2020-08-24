@@ -22,15 +22,16 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-        <dependency>
+        <!--有了nacos, 就不需要spring-boot-admin-starter-client这个了-->
+        <!--<dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-starter-client</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-registry-prometheus</artifactId>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 
