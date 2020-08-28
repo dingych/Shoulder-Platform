@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Bean;
  * 微服务的短信中心
  *
  * @author lym
- * @since 1.0
  */
 @SpringBootApplication
 public class SmsCenterStarter {

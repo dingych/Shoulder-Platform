@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author lym
- * @since 1.0
  */
 @RestController
 @RequestMapping("sms")

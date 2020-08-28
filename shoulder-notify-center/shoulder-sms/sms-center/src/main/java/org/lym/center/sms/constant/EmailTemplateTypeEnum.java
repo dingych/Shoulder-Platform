@@ -2,7 +2,6 @@ package org.lym.center.sms.constant;
 
 /**
  * @author lym
- * @since 1.0
  */
 public enum EmailTemplateTypeEnum {
 

@@ -10,8 +10,9 @@ info:
   name: "@project.name@"
   description: "@project.description@"
   version: "@project.version@"
-  spring-boot-version: "@spring.boot.version@"
-  spring-cloud-version: "@spring.cloud.version@"
+  spring-boot-version: "@spring-boot.version@"
+  spring-cloud-version: "@spring-cloud.version@"
+  shoulder-version: "@shoulder.version@"
   profile: "@profile.active@"
 
 spring:

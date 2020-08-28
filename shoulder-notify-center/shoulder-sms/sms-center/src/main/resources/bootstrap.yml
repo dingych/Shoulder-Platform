@@ -10,13 +10,21 @@ info:
   name: "@project.name@"
   description: "@project.description@"
   version: "@project.version@"
-  spring-boot-version: "@spring.boot.version@"
-  spring-cloud-version: "@spring.cloud.version@"
+  spring-boot-version: ${spring-boot.version}
+  spring-cloud-version: ${spring-cloud.version}
+  shoulder-version: "@shoulder.version@"
   profile: "@profile.active@"
 
 # ==================================  配置正文  ================================
 spring:
-  #main:
+  jpa:
+    database: MYSQL
+    hibernate:
+    #ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
   #allow-bean-definition-overriding: true
   application:
     name: ${info.name}
@@ -31,6 +39,10 @@ spring:
         shared-configs:
           - dataId: common.yml
             refresh: true
+          - dataId: sms-center.yml
+            refresh: true
+          - dataId: third-account.yml # 对接第三方需要的信息
+            refresh: false
           - dataId: redis.yml
             refresh: false
           - dataId: db.yml
