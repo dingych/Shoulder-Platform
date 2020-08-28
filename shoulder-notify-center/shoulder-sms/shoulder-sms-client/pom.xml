@@ -3,12 +3,13 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>cn.itlym.platform</groupId>
+        <groupId>cn.itlym.platform.notify</groupId>
         <artifactId>shoulder-sms</artifactId>
         <version>1.0-SNAPSHOT</version><!-- shoulder-platform-version -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>cn.itlym.platform.notify</groupId>
     <artifactId>shoulder-sms-client</artifactId>
     <description>功能：向sms-center发送请求。供微服务内部，其他服务使用</description>
 

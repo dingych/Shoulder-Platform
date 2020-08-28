@@ -11,6 +11,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>cn.itlym.platform.notify</groupId>
     <artifactId>shoulder-notify-center</artifactId>
     <packaging>pom</packaging>
 
