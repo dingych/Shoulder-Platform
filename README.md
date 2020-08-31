@@ -129,9 +129,33 @@
 
 #### 监控
 
+[监控系统预览地址](http://grafana.itlym.cn)（访客账号密码：`shoulder` / `shoulder123`，演示账号仅包含仪表盘查看权限，不能编辑）
+
+![主机监控](img/host.png)
+
 ![prometheus + grafana 监控 docker](img/docker.png)
 
-![监控redis](img/docker.png)
+![监控redis](img/redis.png)
+
+![nacos1](img/nacos1.png)
+
+![nacos2](img/nacos2.png)
+
+![mysql1](img/mysql1.png)
+
+![mysql2](img/mysql2.png)
+
+#### 日志收集
+
+ELK展示nginx日志演示
+
+查看所有访问 grafana.itlym.cn 的访问日志
+
+![ELK展示nginx日志，演示过滤访问 grafana.itlym.cn 的记录](img/elk-nginx.png)
+
+查看所有请求时间大于 200ms 的访问日志
+
+![ELK展示nginx日志，演示过滤访问 grafana.itlym.cn 的记录](img/elk-nginx.png)
 
 
 ## 项目代码地址

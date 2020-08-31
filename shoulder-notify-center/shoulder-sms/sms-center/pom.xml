@@ -63,7 +63,6 @@
 
     </dependencies>
 
-
     <build>
         <!-- maven 默认使用 artifactId+version拼接 -->
         <finalName>${project.artifactId}</finalName>

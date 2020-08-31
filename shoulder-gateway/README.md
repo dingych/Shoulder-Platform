@@ -1,13 +1,29 @@
-# shoulder-platform
+# shoulder-platform-gateway
 
-API Gateway
+- 对外网关
+    - api-gateway 开放 api 网关
+    - web-gateway web网关
+    - app-gateway app网关
+    - 注：这些网关虽然是系统对外服务的门面，用于隔离内部细节，但一般也不会直接暴露于外部网络，而是位于 nginx 等代理服务器之后，系统服务之前。
 
-该网关一般不直接与外界交互，一般位于代理网关（Apach、nginx、openResty、Kong）之后，而API 网关的后端是微服务的集群。
+- 对内网关
+    - biz-gateway 业务网关
+    - storage-gateway 对象存储，统一存储
+    - third-api-gateway 调用第三方接口过该网关
 
-接入层网关：安全、限流、日志、监控、缓存（业务无关）
 
-API 服务网关：超时、缓存、熔断、重试、查询聚合、数据校验（时间、方法、版本、AppKey、签名）
-【贴近业务】
-
-实际应用中，也可以根据自己的设计，将代理网关的能力赋予 API gateway 中。
-
+           
+                              i.        
+                            .`   i.      
+                          .`       `i      
+                     ,.·`            i      
+                .··`                  i     
+           .··``           spring     1     
+         ·`                 ./        i     
+        :                .//         i     
+       (              ,.//          i      
+       :            .##`          ,:      
+        `·,      .##i`          .:       
+           `:####:,          ,·`        
+     .#.  :####:`   `--....--`         
+     `·`  ````    
