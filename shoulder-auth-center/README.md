@@ -27,3 +27,4 @@ USER-CENTER
 - [服务认证与鉴权](https://zhuanlan.zhihu.com/p/101595143)（适合权限数量较少，如OpenAPI）
 - 服务认证：accessToken + refreshToken。前端每10分钟检查一下 refreshToken 过期时间，如果发现即将过期，提前申请 refreshToken
 
+[gitee:六个高Star开源项目，让你更懂OAuth和单点登录](https://zhuanlan.zhihu.com/p/187131269)

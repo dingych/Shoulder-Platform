@@ -14,6 +14,7 @@
         <module>shoulder-gateway</module>
         <module>shoulder-auth-center</module>
         <module>shoulder-notify-center</module>
+        <module>shoulder-pay-center</module>
         <module>shoulder-backstage</module>
     </modules>
 

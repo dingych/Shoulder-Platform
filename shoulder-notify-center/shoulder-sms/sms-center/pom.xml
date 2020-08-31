@@ -3,12 +3,13 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
+        <groupId>cn.itlym.platform.notify</groupId>
         <artifactId>shoulder-sms</artifactId>
-        <groupId>cn.itlym.platform</groupId>
         <version>1.0-SNAPSHOT</version><!-- shoulder-platform-version -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>cn.itlym.platform.notify</groupId>
     <artifactId>sms-center</artifactId>
     <name>${artifactId}</name>
     <description>Shoulder平台-短信推送服务</description>
@@ -20,7 +21,7 @@
     <dependencies>
         <!-- sms-api -->
         <dependency>
-            <groupId>cn.itlym.platform</groupId>
+            <groupId>cn.itlym.platform.notify</groupId>
             <artifactId>sms-api</artifactId>
         </dependency>
         <!-- aliyun-sms -->
