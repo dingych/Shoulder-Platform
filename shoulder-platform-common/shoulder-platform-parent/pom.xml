@@ -269,6 +269,21 @@
                     </configuration>
                 </plugin>
 
+
+
+
+                <!-- war 方式打包插件 -->
+                <!--<plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${maven-war-plugin}</version>2.1.1
+                    <configuration>
+                        &lt;!&ndash; 设置 war 名称 和编码方式 &ndash;&gt;
+                        <warName>${project.artifactId}</warName>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>-->
+
             </plugins>
         </pluginManagement>
     </build>

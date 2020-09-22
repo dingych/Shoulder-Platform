@@ -12,11 +12,12 @@
     <modules>
         <module>shoulder-platform-common</module>
         <module>shoulder-gateway</module>
-        <module>shoulder-user-center</module>
+        <module>shoulder-auth-center</module>
         <module>shoulder-notify-center</module>
         <module>shoulder-pay-center</module>
         <module>shoulder-storage-center</module>
         <module>shoulder-system-center</module>
+        <module>shoulder-backstage</module>
     </modules>
 
 

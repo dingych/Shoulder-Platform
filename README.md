@@ -137,9 +137,36 @@
 
 #### 监控
 
+[监控系统预览地址](http://grafana.itlym.cn)（访客账号密码：`shoulder` / `shoulder123`，演示账号仅包含仪表盘查看权限，不能编辑）
+
+![主机监控](img/host.png)
+
 ![prometheus + grafana 监控 docker](img/docker.png)
 
-![监控redis](img/docker.png)
+![监控redis](img/redis.png)
+
+![nacos1](img/nacos1.png)
+
+![nacos2](img/nacos2.png)
+
+![mysql1](img/mysql1.png)
+
+![mysql2](img/mysql2.png)
+
+![mysql3](img/mysql3.png)
+
+
+#### 日志收集
+
+ELK展示nginx日志演示
+
+查看所有访问 grafana.itlym.cn 的访问日志
+
+![ELK展示nginx日志，演示过滤访问 grafana.itlym.cn 的记录](img/elk-nginx.png)
+
+查看所有请求时间大于 200ms 的访问日志
+
+![ELK展示nginx日志，演示过滤访问 grafana.itlym.cn 的记录](img/elk-nginx.png)
 
 
 ## 项目代码地址
@@ -152,6 +179,7 @@
 | shoulder-lombok | [github](https://github.com/ChinaLym/shoulder-lombok)、[gitee](https://gitee.com/ChinaLym/shoulder-lombok) | 在`lombok`之上，增加 `@SLog` 注解，用于简化[软件优雅设计与开发最佳实践-错误码与日志](http://spec.itlym.cn/specs/base/errorCode.html) -shoulder 实现的日志框架的使用（非必须） |
 | shoulder-lombok-idea-plugin | [github](https://github.com/ChinaLym/lombok-intellij-plugin)、[gitee](https://gitee.com/ChinaLym/lombok-intellij-plugin) | 在 `lombok-idea-plugin`之上，在 IDEA 中增加`@SLog`的编码提示，以更好的使用 `shoulder-lombok`（非必须，使用 shoulder-lombok 时推荐） |
 | **Shoulder Platform** | [github](https://github.com/ChinaLym/Shoulder-Platform)、[gitee](https://gitee.com/ChinaLym/shoulder-Platform) | SaaS 开发平台，提供了基础通用能力，与具体业务无关 |
+| Shoulder iPaaS | [github](https://github.com/ChinaLym/shoulder-iPaaS)、[gitee](https://gitee.com/ChinaLym/shoulder-iPaaS) | iPaaS 平台，介绍了常见中间件、监控系统、私有基础平台如何部署 |
 
 ## 层次设计
 

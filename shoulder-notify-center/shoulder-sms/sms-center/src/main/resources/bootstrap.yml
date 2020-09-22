@@ -17,14 +17,6 @@ info:
 
 # ==================================  配置正文  ================================
 spring:
-  jpa:
-    database: MYSQL
-    hibernate:
-    #ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
-
   #allow-bean-definition-overriding: true
   application:
     name: ${info.name}
@@ -57,3 +49,12 @@ spring:
         metadata:
           management.context-path: ${server.servlet.context-path:}${spring.mvc.servlet.path:}${management.endpoints.web.base-path:}
 
+boot:
+  admin:
+    client:
+      url: localhost:12365
+      #username:
+      #password:
+      instance:
+        prefer-ip: true
+        service-url: localhost8080

@@ -15,9 +15,9 @@ import reactor.core.publisher.Mono;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class ShoulderGatewayApplication {
+public class ShoulderApiGateway {
     public static void main(String[] args) {
-        SpringApplication.run(ShoulderGatewayApplication.class, args);
+        SpringApplication.run(ShoulderApiGateway.class, args);
     }
 
     @RequestMapping("/fallback")
