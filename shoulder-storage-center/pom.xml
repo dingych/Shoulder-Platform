@@ -4,18 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>cn.itlym.platform</groupId>
-        <artifactId>shoulder-platform</artifactId>
+        <artifactId>shoulder-platform-parent</artifactId>
         <version>1.0-SNAPSHOT</version><!-- shoulder-platform-version -->
+        <relativePath>../shoulder-platform-common/shoulder-platform-parent/pom.xml</relativePath>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.itlym.platform.notify</groupId>
-    <artifactId>shoulder-notify-center</artifactId>
+    <artifactId>shoulder-storage-center</artifactId>
     <packaging>pom</packaging>
-
     <modules>
-        <module>shoulder-sms</module>
+        <module>storage-modules</module>
     </modules>
 
 
