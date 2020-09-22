@@ -26,7 +26,7 @@ public class P6spyLogger extends FormattedLogger {
     @Override
     public void logSQL(int connectionId, String now, long elapsed, Category category, String prepared, String sql, String url) {
         String msg = strategy.formatMessage(connectionId, now, elapsed,
-            category.toString(), prepared, sql, url);
+                category.toString(), prepared, sql, url);
 
         if (StringUtils.isEmpty(msg)) {
             return;

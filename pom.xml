@@ -16,6 +16,7 @@
         <module>shoulder-notify-center</module>
         <module>shoulder-pay-center</module>
         <module>shoulder-storage-center</module>
+        <module>shoulder-system-center</module>
     </modules>
 
 
